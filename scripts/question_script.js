@@ -1,8 +1,8 @@
-var button1 = document.getElementById('arrow1'),
-button2 = document.getElementById('arrow2'),
-button3 = document.getElementById('arrow3'),
-button4 = document.getElementById('arrow4'),
-button5 = document.getElementById('arrow5');
+var question1 = document.getElementById('question1'),
+question2 = document.getElementById('question2'),
+question3 = document.getElementById('question3'),
+question4 = document.getElementById('question4'),
+question5 = document.getElementById('question5');
 
 var rotated1 = false,  rotated2 = false, rotated3 = false,
 rotated4 = false, rotated5 = false;
@@ -21,7 +21,7 @@ document.getElementById('question5')];
 
 var card = document.getElementsByClassName('card');
 
-button1.addEventListener('click', event => {
+question1.addEventListener('click', event => {
     if (rotated1 === false) {
         button1.style.transform = "rotate(180deg)";
         rotated1 = true;
@@ -53,7 +53,7 @@ button1.addEventListener('click', event => {
     }
 })
 
-button2.addEventListener('click', event => {
+question2.addEventListener('click', event => {
     if (rotated2 === false) {
         button2.style.transform = "rotate(180deg)";
         rotated2 = true;
@@ -85,7 +85,7 @@ button2.addEventListener('click', event => {
     }
 })
 
-button3.addEventListener('click', event => {
+question3.addEventListener('click', event => {
     if (rotated3 === false) {
         button3.style.transform = "rotate(180deg)";
         rotated3 = true;
@@ -117,7 +117,7 @@ button3.addEventListener('click', event => {
     }
 })
 
-button4.addEventListener('click', event => {
+question4.addEventListener('click', event => {
     if (rotated4 === false) {
         button4.style.transform = "rotate(180deg)";
         rotated4 = true;
@@ -149,7 +149,7 @@ button4.addEventListener('click', event => {
     }
 })
 
-button5.addEventListener('click', event => {
+question5.addEventListener('click', event => {
     if (rotated5 === false) {
         button5.style.transform = "rotate(180deg)";
         rotated5 = true;
