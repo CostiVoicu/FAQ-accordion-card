@@ -1,0 +1,146 @@
+@import './variables';
+
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    font-size: $font-size;
+    font-family: $font-family;
+    font-weight: $regular-weight;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg ,$primary-color-soft-violet 67%, $primary-color-soft-blue 117%);
+    background-attachment: fixed;
+    .main{
+        width: 330px;
+        height: 550px;
+        border-radius: 1.4rem;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top: 50px;
+        @media (min-width: $desktop-size){
+            top: 0px;
+            height: 510px;
+            width: 900px;
+        }
+        .image{
+            #illustration_mobile{
+                position: absolute;
+                top: -107px;
+                left: 20px;
+                z-index: 2;
+                @media (min-width: $desktop-size){
+                    display: none;
+                }
+            }
+            #shadow_mobile{
+                position: absolute;
+                top: 0px;
+                left: 50px;
+                z-index: 1;
+                @media (min-width: $desktop-size){
+                    display: none;
+                }
+            }
+            #box_desktop{
+                display: none;
+                @media (min-width: $desktop-size){
+                    position: absolute;
+                    display: block;
+                    top: 235px + $extra;
+                    left: -93px;
+                    z-index: 9;
+                }
+            }
+            .hidden{
+                @media (min-width: $desktop-size){
+                    position: relative;
+                    overflow: hidden;            
+                    height: 510px;
+                    width: 900px;
+                }
+                #illustration_desktop{
+                    display: none;
+                    @media (min-width: $desktop-size){
+                        position: absolute;
+                        display: block;
+                        top: 100px + $extra;
+                        left: -80px;
+                        z-index: 8;
+                    }
+                }
+                #shadow_desktop{
+                    display: none;
+                    @media (min-width: $desktop-size){
+                        position: absolute;
+                        display: block;
+                        top: -270px + $extra;
+                        left: -580px;
+                        z-index: 7;
+                    }
+                }
+            }
+        }
+        .header{
+            position: absolute;
+            top: 110px;
+            @media (min-width: $desktop-size){
+                left: 423px + $extra_text-left;
+                top: 100px + $extra_text-top;
+            }
+            .title{
+                font-size: $font-size + 20px;
+                font-weight: $big-weight;
+                color: $primary-color-very-dark-desaturated-blue;
+            }
+        }
+        .text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            top: 180px;
+            width: 100%;
+            height: auto;
+            @media (min-width: $desktop-size){
+                width: 42%;
+                left: 400px + $extra_text-left;
+                top: 190px + $extra_text-top;
+            }
+            .card{
+                display: grid;
+                grid-template-columns: 95% 5%;
+                grid-auto-rows: auto;
+                width: 90%;
+                border-bottom: solid rgb(214, 214, 214) 1px;
+                padding: 0.6em 0;
+                .question{
+                    font-size: $font-size + 2px;
+                    font-weight: $regular-weight;
+                    color: $neutral-color-very-dark-grayish-blue;
+                    float: left;
+                }
+                .arrow{
+                    position: relative;
+                    top: 18px;
+                    float: right;
+                }
+                .answear{
+                    font-size: $font-size + 1px;
+                    font-weight: $regular-weight;
+                    color: $neutral-color-dark-grayish-blue;
+                    display: none;
+                }
+            }
+        }
+    }
+}
