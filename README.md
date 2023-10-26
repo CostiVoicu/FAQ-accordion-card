@@ -10,7 +10,6 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
 
 ## Overview
@@ -41,15 +40,6 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - Javascript
-
-
-### What I learned
-
-- I learned how to use the 'click' event: 
-
-```js
-  button1.addEventListener('click', event => {
-```
 
 ### Useful resources
 
